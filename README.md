@@ -2,7 +2,6 @@
 
 This project demonstrates how to deploy a containerized Node.js calculator microservice to a Kubernetes cluster using Docker Desktop with Kubernetes enabled.
 
----
 
 ##  Application Overview
 
