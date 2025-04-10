@@ -7,15 +7,11 @@ This project demonstrates how to deploy a containerized Node.js calculator micro
 
 A simple calculator microservice built with Node.js, containerized using Docker, and deployed using Kubernetes.
 
----
-
 ##  Prerequisites
 
-- [Docker Desktop](https://www.docker.com/products/docker-desktop) (with Kubernetes enabled)
-- [Docker Hub](https://hub.docker.com/) account
+- Docker Desktop (with Kubernetes enabled)
+- Docker Hub account
 - `kubectl` CLI (included with Docker Desktop)
-
----
 
 ##  Deployment Steps
 
@@ -28,22 +24,16 @@ A simple calculator microservice built with Node.js, containerized using Docker,
 
 Wait until Kubernetes is running (green status indicator).
 
----
-
 ### 2. Build and Push Docker Image
 
-docker build -t your-dockerhub-username/image-name .
-docker login
-docker push your-dockerhub-username/image-name
-
----
+1. docker build -t your-dockerhub-username/image-name .
+2. docker login
+3. docker push your-dockerhub-username/image-name
 
 ### 3. Apply Kubernetes Deployment and Service
 
-kubectl apply -f deployment.yaml
-kubectl apply -f service.yaml
-
----
+1. kubectl apply -f deployment.yaml
+2. kubectl apply -f service.yaml
 
 ### 4. Access the application via the browser
 
